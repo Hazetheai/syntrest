@@ -1,0 +1,26 @@
+.comment {
+  margin: 0.5rem;
+  //   box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  border: transparent;
+  background-color: $color-grey-light-2;
+  width: 25rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  outline: none;
+  color: $color-black;
+
+  &::placeholder {
+    color: $color-black;
+  }
+
+  &--previous {
+    margin-left: 3rem;
+  }
+
+  //   &input:hover,
+  //   &input:active {
+  //     box-shadow: $box-shadow;
+  //   }
+}

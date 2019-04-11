@@ -9,20 +9,62 @@
   </head>
   <body>
     <main>
-      <section>
+      <section class="section-fullscreen">
         <div class="card">
           <div class="card__nav">
-            <button class="btn__more">More</button>
-            <button class="btn__share">Share</button>
-            <button class="btn__save">Save</button>
+            <button class="card__btn--more btn btn--more">&#8942;</button>
+            <button class="card__btn--share btn btn--share">Share</button>
+            <button class="card__btn--save btn btn--save">Save</button>
           </div>
           <div class="card__image">
-            <button class="btn__fullscreen">FS</button>
+            <button class="card__btn--fullscreen btn btn--fullscreen">
+              <svg height="100%" version="1.1" viewBox="0 0 36 36" width="100%">
+                <g class="ytp-fullscreen-button-corner-0">
+                  <use class="ytp-svg-shadow" xlink:href="#ytp-id-24"></use>
+                  <path
+                    class="ytp-svg-fill"
+                    d="m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z"
+                    id="ytp-id-24"
+                  ></path>
+                </g>
+                <g class="ytp-fullscreen-button-corner-1">
+                  <use class="ytp-svg-shadow" xlink:href="#ytp-id-25"></use>
+                  <path
+                    class="ytp-svg-fill"
+                    d="m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z"
+                    id="ytp-id-25"
+                  ></path>
+                </g>
+                <g class="ytp-fullscreen-button-corner-2">
+                  <use class="ytp-svg-shadow" xlink:href="#ytp-id-26"></use>
+                  <path
+                    class="ytp-svg-fill"
+                    d="m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z"
+                    id="ytp-id-26"
+                  ></path>
+                </g>
+                <g class="ytp-fullscreen-button-corner-3">
+                  <use class="ytp-svg-shadow" xlink:href="#ytp-id-27"></use>
+                  <path
+                    class="ytp-svg-fill"
+                    d="M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z"
+                    id="ytp-id-27"
+                  ></path>
+                </g>
+              </svg>
+            </button>
             <img src="" alt="" srcset="" />
           </div>
-          <div class="card__comments">
-            <input type="text" name="comment" />
-            <p class="comment--previous">A Previous comment</p>
+          <div class="card__comment">
+            <input
+              class="comment comment--input card__comment--input"
+              type="text"
+              name="comment"
+              placeholder="Write a comment"
+            />
+            <p class="comment comment--previous card__comment">
+              A Previous comment
+            </p>
           </div>
         </div>
       </section>

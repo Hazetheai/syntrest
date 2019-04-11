@@ -1,0 +1,52 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background-color: $color-white;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+    border: transparent;
+    margin: 0.4rem;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+  }
+  &:hover {
+    transform: translateY(-0.1px);
+    box-shadow: $box-shadow-3;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: $box-shadow-2;
+  }
+  //Changing this changes other button sizes too?
+  &--more {
+    padding: 0.8rem 0.6rem 0.8rem 0.6rem;
+    border: solid 1px $color-grey-dark-3;
+  }
+
+  &--share {
+    background-color: $color-tertiary-light;
+  }
+
+  &--save {
+    border: solid 1px $color-grey-dark-3;
+  }
+
+  //should not take up as much space as it does
+  &--fullscreen {
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+  }
+}
